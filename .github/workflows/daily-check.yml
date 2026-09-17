@@ -16,13 +16,21 @@ concurrency:
 jobs:
   check:
     runs-on: ubuntu-latest
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Check sources
+        env:
+          CHANGED_FILE: ${{ runner.temp }}/changed.txt
         run: python scripts/check_updates.py
+      - name: Mirror large files to the mirror-latest release
+        env:
+          CHANGED_FILE: ${{ runner.temp }}/changed.txt
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/mirror_release.py
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"

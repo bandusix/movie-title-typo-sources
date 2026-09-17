@@ -24,7 +24,8 @@
     "url": "https://files.tmdb.org/p/exports/movie_ids_{MM}_{DD}_{YYYY}.json.gz",
     "homepage": "https://developer.themoviedb.org/docs/daily-id-exports",
     "license": "TMDB terms of use",
-    "mirror": false
+    "mirror": "release",
+    "filename": "tmdb-movie-ids.json.gz"
   },
   {
     "id": "tmdb-tv-series-ids",
@@ -33,7 +34,8 @@
     "url": "https://files.tmdb.org/p/exports/tv_series_ids_{MM}_{DD}_{YYYY}.json.gz",
     "homepage": "https://developer.themoviedb.org/docs/daily-id-exports",
     "license": "TMDB terms of use",
-    "mirror": false
+    "mirror": "release",
+    "filename": "tmdb-tv-series-ids.json.gz"
   },
   {
     "id": "enwiki-redirect",
@@ -42,7 +44,8 @@
     "url": "https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-redirect.sql.gz",
     "homepage": "https://en.wikipedia.org/wiki/Category:Redirects_from_misspellings",
     "license": "CC BY-SA 4.0",
-    "mirror": false
+    "mirror": "release",
+    "filename": "enwiki-latest-redirect.sql.gz"
   },
   {
     "id": "enwiki-page",
@@ -51,7 +54,8 @@
     "url": "https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-page.sql.gz",
     "homepage": "https://dumps.wikimedia.org/enwiki/latest/",
     "license": "CC BY-SA 4.0",
-    "mirror": false
+    "mirror": "release",
+    "filename": "enwiki-latest-page.sql.gz"
   },
   {
     "id": "enwiki-categorylinks",
@@ -60,7 +64,8 @@
     "url": "https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-categorylinks.sql.gz",
     "homepage": "https://dumps.wikimedia.org/enwiki/latest/",
     "license": "CC BY-SA 4.0",
-    "mirror": false
+    "mirror": "release",
+    "filename": "enwiki-latest-categorylinks.sql.gz"
   },
   {
     "id": "wikidata-entities",

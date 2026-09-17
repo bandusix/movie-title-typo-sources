@@ -7,6 +7,7 @@ A GitHub Action runs **every day at 09:00 UTC**, checks each upstream download U
 - `manifest.json` — current version fingerprint of every source (ETag, Last-Modified, size, or SHA-256)
 - `CHANGELOG.md` — dated log of every upstream change detected
 - `data/` — mirrored copies of the small, redistributable corpora
+- the `mirror-latest` release — mirrored copies of the large files
 - the status table below
 
 ## Current status
@@ -16,11 +17,11 @@ A GitHub Action runs **every day at 09:00 UTC**, checks each upstream download U
 |---|---|---|---|---|---|---|
 | [IMDb alternate titles (AKAs)](https://developer.imdb.com/non-commercial-datasets) | titles | 490.2 MB | Thu, 17 Sep 2026 00:40:26 GMT | 2026-09-17 | no | [link](https://datasets.imdbws.com/title.akas.tsv.gz) |
 | [IMDb base titles](https://developer.imdb.com/non-commercial-datasets) | titles | 216.6 MB | Thu, 17 Sep 2026 00:39:35 GMT | 2026-09-17 | no | [link](https://datasets.imdbws.com/title.basics.tsv.gz) |
-| [TMDB daily movie ID export](https://developer.themoviedb.org/docs/daily-id-exports) | titles | 26.7 MB | Thu, 17 Sep 2026 07:19:17 GMT | 2026-09-17 | no | [link](https://files.tmdb.org/p/exports/movie_ids_09_17_2026.json.gz) |
-| [TMDB daily TV series ID export](https://developer.themoviedb.org/docs/daily-id-exports) | titles | 4.8 MB | Thu, 17 Sep 2026 07:10:42 GMT | 2026-09-17 | no | [link](https://files.tmdb.org/p/exports/tv_series_ids_09_17_2026.json.gz) |
-| [English Wikipedia redirect table (includes R from misspelling)](https://en.wikipedia.org/wiki/Category:Redirects_from_misspellings) | titles | 178.3 MB | Thu, 03 Sep 2026 17:59:27 GMT | 2026-09-17 | no | [link](https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-redirect.sql.gz) |
-| [English Wikipedia page table](https://dumps.wikimedia.org/enwiki/latest/) | titles | 2.2 GB | Thu, 03 Sep 2026 17:57:41 GMT | 2026-09-17 | no | [link](https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-page.sql.gz) |
-| [English Wikipedia categorylinks table](https://dumps.wikimedia.org/enwiki/latest/) | titles | 2.4 GB | Thu, 03 Sep 2026 17:20:42 GMT | 2026-09-17 | no | [link](https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-categorylinks.sql.gz) |
+| [TMDB daily movie ID export](https://developer.themoviedb.org/docs/daily-id-exports) | titles | 26.7 MB | Thu, 17 Sep 2026 07:19:17 GMT | 2026-09-17 | [release asset](../../releases/tag/mirror-latest) | [link](https://files.tmdb.org/p/exports/movie_ids_09_17_2026.json.gz) |
+| [TMDB daily TV series ID export](https://developer.themoviedb.org/docs/daily-id-exports) | titles | 4.8 MB | Thu, 17 Sep 2026 07:10:42 GMT | 2026-09-17 | [release asset](../../releases/tag/mirror-latest) | [link](https://files.tmdb.org/p/exports/tv_series_ids_09_17_2026.json.gz) |
+| [English Wikipedia redirect table (includes R from misspelling)](https://en.wikipedia.org/wiki/Category:Redirects_from_misspellings) | titles | 178.3 MB | Thu, 03 Sep 2026 17:59:27 GMT | 2026-09-17 | [release asset](../../releases/tag/mirror-latest) | [link](https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-redirect.sql.gz) |
+| [English Wikipedia page table](https://dumps.wikimedia.org/enwiki/latest/) | titles | 2.2 GB | Thu, 03 Sep 2026 17:57:41 GMT | 2026-09-17 | [release asset](../../releases/tag/mirror-latest) | [link](https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-page.sql.gz) |
+| [English Wikipedia categorylinks table](https://dumps.wikimedia.org/enwiki/latest/) | titles | 2.4 GB | Thu, 03 Sep 2026 17:20:42 GMT | 2026-09-17 | [release asset](../../releases/tag/mirror-latest) | [link](https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-categorylinks.sql.gz) |
 | [Wikidata full entity dump (aliases / also known as)](https://www.wikidata.org/wiki/Wikidata:Database_download) | titles | 96.1 GB | Tue, 15 Sep 2026 23:15:11 GMT | 2026-09-17 | no | [link](https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.json.bz2) |
 | [Birkbeck misspellings (Roger Mitton)](https://www.dcs.bbk.ac.uk/~roger/corpora.html) | misspellings | 360.3 KB | Thu, 19 Apr 2007 22:50:28 GMT | 2026-09-17 | [data/birkbeck-missp.dat](data/birkbeck-missp.dat) | [link](https://titan.dcs.bbk.ac.uk/~roger/missp.dat) |
 | [Holbrook misspellings (Roger Mitton)](https://www.dcs.bbk.ac.uk/~roger/corpora.html) | misspellings | 24.0 KB | Mon, 21 May 2007 20:47:23 GMT | 2026-09-17 | [data/holbrook-missp.dat](data/holbrook-missp.dat) | [link](https://titan.dcs.bbk.ac.uk/~roger/holbrook-missp.dat) |
@@ -34,8 +35,12 @@ A GitHub Action runs **every day at 09:00 UTC**, checks each upstream download U
 
 | Kind | Sources | Why |
 |---|---|---|
-| **Mirrored** into `data/` | Mitton corpora, Norvig `spell-errors.txt`, Wikipedia common misspellings | Small and freely redistributable |
-| **Tracked only** (URL + version) | IMDb, TMDB, Wikipedia dumps, Wikidata dump | Licence forbids redistribution (IMDb) or files exceed GitHub's 100 MB limit (up to ~100 GB) |
+| **Mirrored in git** (`data/`) | Mitton corpora, Norvig `spell-errors.txt`, Wikipedia common misspellings | Small and freely redistributable |
+| **Mirrored as release assets** ([`mirror-latest`](../../releases/tag/mirror-latest)) | TMDB daily ID exports, English Wikipedia `redirect` / `page` / `categorylinks` tables | Too large for git (GitHub blocks files over 100 MB). Files above 1.9 GB are split: rejoin with `cat NAME.part* > NAME` |
+| **Tracked only** (URL + version) | IMDb datasets | IMDb's licence forbids republishing the data |
+| **Tracked only** (URL + version) | Wikidata full entity dump | 96 GB, refreshed weekly: not something GitHub hosting is meant for. Use SPARQL for film and TV aliases instead |
+
+TMDB data is mirrored unmodified with attribution: this product uses TMDB data but is not endorsed or certified by TMDB.
 
 For tracked-only sources, download from the link in the status table. `manifest.json` tells you whether your local copy is stale.
 

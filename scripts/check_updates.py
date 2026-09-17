@@ -12,6 +12,7 @@ import datetime as dt
 import email.utils
 import hashlib
 import json
+import os
 import pathlib
 import sys
 import urllib.error
@@ -25,6 +26,7 @@ README = ROOT / "README.md"
 DATA = ROOT / "data"
 UA = "typo-db-tracker/1.0 (+https://github.com/)"
 TIMEOUT = 60
+RELEASE_URL = "../../releases/tag/mirror-latest"
 TABLE_START = "<!-- STATUS:START -->"
 TABLE_END = "<!-- STATUS:END -->"
 
@@ -64,7 +66,7 @@ def check(source, today, known_url=None):
         urls = urls[: urls.index(known_url) + 1]
     for url in urls:
         try:
-            if source.get("mirror"):
+            if source.get("mirror") is True:
                 with request(url, "GET") as resp:
                     body = resp.read()
                     last_modified = resp.headers.get("Last-Modified")
@@ -113,7 +115,12 @@ def render_table(sources, manifest):
     ]
     for s in sources:
         e = manifest.get(s["id"], {})
-        mirrored = f"[data/{s['filename']}](data/{s['filename']})" if s.get("mirror") else "no"
+        if s.get("mirror") is True:
+            mirrored = f"[data/{s['filename']}](data/{s['filename']})"
+        elif s.get("mirror") == "release":
+            mirrored = f"[release asset]({RELEASE_URL})"
+        else:
+            mirrored = "no"
         rows.append(
             f"| [{s['name']}]({s['homepage']}) | {s['category']} | {human_size(e.get('size'))} "
             f"| {e.get('last_modified') or '?'} | {e.get('changed_at', '?')} | {mirrored} "
@@ -127,7 +134,7 @@ def main():
     stamp = now.strftime("%Y-%m-%d")
     sources = json.loads(SOURCES.read_text())
     manifest = json.loads(MANIFEST.read_text()) if MANIFEST.exists() else {}
-    changes, errors = [], []
+    changes, errors, changed_ids = [], [], []
 
     for s in sources:
         old = manifest.get(s["id"], {})
@@ -137,13 +144,14 @@ def main():
             errors.append(f"{s['id']}: {exc}")
             print(f"ERROR   {s['id']}: {exc}", file=sys.stderr)
             continue
-        mirror = bool(s.get("mirror"))
+        mirror = s.get("mirror") is True
         if is_older(new, old):
             print(f"stale   {s['id']} (edge served an older copy, keeping recorded version)")
             continue
         if fingerprint(old, mirror) != fingerprint(new, mirror):
             new["changed_at"] = stamp
             verb = "added" if not old else "updated"
+            changed_ids.append(s["id"])
             changes.append(f"- **{s['id']}** {verb}: {new['resolved_url']} ({human_size(new.get('size'))})")
             print(f"CHANGED {s['id']}")
         else:
@@ -152,6 +160,10 @@ def main():
         manifest[s["id"]] = new
 
     MANIFEST.write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
+
+    # Hand the changed ids to scripts/mirror_release.py (CI only).
+    if os.environ.get("CHANGED_FILE"):
+        pathlib.Path(os.environ["CHANGED_FILE"]).write_text("\n".join(changed_ids))
 
     if changes:
         header = "# Changelog\n\n"
