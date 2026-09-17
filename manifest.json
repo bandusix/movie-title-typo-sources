@@ -64,10 +64,10 @@
   },
   "norvig-spell-errors": {
     "changed_at": "2026-09-17",
-    "last_modified": "Mon, 22 Apr 2019 19:47:37 GMT",
+    "last_modified": null,
     "resolved_url": "https://norvig.com/ngrams/spell-errors.txt",
-    "sha256": "a4abe6ce6c24280f9a8d0485cbf78ddd2e58279ca01293692630a08ba4b13407",
-    "size": 451530
+    "sha256": "d3b61cdb408c9681965f1a316aa3d839175b2a1a5a9e20d92edfc05f182348fd",
+    "size": 12078
   },
   "tmdb-movie-ids": {
     "changed_at": "2026-09-17",

@@ -2,6 +2,10 @@
 
 ## 2026-09-17
 
+- **norvig-spell-errors** updated: https://norvig.com/ngrams/spell-errors.txt (11.8 KB)
+
+## 2026-09-17
+
 - **imdb-title-akas** updated: https://datasets.imdbws.com/title.akas.tsv.gz (490.2 MB)
 
 ## 2026-09-17
