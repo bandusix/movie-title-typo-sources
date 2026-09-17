@@ -1,0 +1,100 @@
+{
+  "enwiki-categorylinks": {
+    "changed_at": "2026-09-17",
+    "etag": "\"6a99ac6a-976acd47\"",
+    "last_modified": "Thu, 03 Sep 2026 17:20:42 GMT",
+    "resolved_url": "https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-categorylinks.sql.gz",
+    "size": 2540358983
+  },
+  "enwiki-page": {
+    "changed_at": "2026-09-17",
+    "etag": "\"6a99b515-8eae055e\"",
+    "last_modified": "Thu, 03 Sep 2026 17:57:41 GMT",
+    "resolved_url": "https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-page.sql.gz",
+    "size": 2393769310
+  },
+  "enwiki-redirect": {
+    "changed_at": "2026-09-17",
+    "etag": "\"6a99b57f-b24cea8\"",
+    "last_modified": "Thu, 03 Sep 2026 17:59:27 GMT",
+    "resolved_url": "https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-redirect.sql.gz",
+    "size": 186961576
+  },
+  "imdb-title-akas": {
+    "changed_at": "2026-09-17",
+    "etag": "\"d37568140077a2a810b15b97ace03e46-62\"",
+    "last_modified": "Thu, 17 Sep 2026 00:40:26 GMT",
+    "resolved_url": "https://datasets.imdbws.com/title.akas.tsv.gz",
+    "size": 513967311
+  },
+  "imdb-title-basics": {
+    "changed_at": "2026-09-17",
+    "etag": "\"ad3d9bb733d2b0d7c97372bc7cb60fd6-28\"",
+    "last_modified": "Thu, 17 Sep 2026 00:39:35 GMT",
+    "resolved_url": "https://datasets.imdbws.com/title.basics.tsv.gz",
+    "size": 227168719
+  },
+  "mitton-aspell": {
+    "changed_at": "2026-09-17",
+    "last_modified": "Mon, 02 Apr 2007 15:43:10 GMT",
+    "resolved_url": "https://titan.dcs.bbk.ac.uk/~roger/aspell.dat",
+    "sha256": "0198fa5c343f82f0541ae39a0116b534e14bfadc54144377cadee2bd6d288988",
+    "size": 9326
+  },
+  "mitton-birkbeck": {
+    "changed_at": "2026-09-17",
+    "last_modified": "Thu, 19 Apr 2007 22:50:28 GMT",
+    "resolved_url": "https://titan.dcs.bbk.ac.uk/~roger/missp.dat",
+    "sha256": "ed7d8c91961a1201632351943571e77af2011cdf45d24304c4d7cad6cf77ea15",
+    "size": 368933
+  },
+  "mitton-holbrook": {
+    "changed_at": "2026-09-17",
+    "last_modified": "Mon, 21 May 2007 20:47:23 GMT",
+    "resolved_url": "https://titan.dcs.bbk.ac.uk/~roger/holbrook-missp.dat",
+    "sha256": "e2f0f0564954d049a1f663f3c7e72899382570a4fe575015169b1117de85ae3c",
+    "size": 24597
+  },
+  "mitton-wikipedia": {
+    "changed_at": "2026-09-17",
+    "last_modified": "Mon, 23 Apr 2007 21:58:41 GMT",
+    "resolved_url": "https://titan.dcs.bbk.ac.uk/~roger/wikipedia.dat",
+    "sha256": "061ec33aa12a4aea718a7bb121360812c8348770833e730124af1eecdc2cd380",
+    "size": 43848
+  },
+  "norvig-spell-errors": {
+    "changed_at": "2026-09-17",
+    "last_modified": "Mon, 22 Apr 2019 19:47:37 GMT",
+    "resolved_url": "https://norvig.com/ngrams/spell-errors.txt",
+    "sha256": "a4abe6ce6c24280f9a8d0485cbf78ddd2e58279ca01293692630a08ba4b13407",
+    "size": 451530
+  },
+  "tmdb-movie-ids": {
+    "changed_at": "2026-09-17",
+    "etag": "\"dd774a409d26c04400d1b31408bf36cf\"",
+    "last_modified": "Thu, 17 Sep 2026 07:19:17 GMT",
+    "resolved_url": "https://files.tmdb.org/p/exports/movie_ids_09_17_2026.json.gz",
+    "size": 27954903
+  },
+  "tmdb-tv-series-ids": {
+    "changed_at": "2026-09-17",
+    "etag": "\"a523ea6290f13f6e56e2d76d7b863f3e\"",
+    "last_modified": "Wed, 16 Sep 2026 07:10:42 GMT",
+    "resolved_url": "https://files.tmdb.org/p/exports/tv_series_ids_09_16_2026.json.gz",
+    "size": 5063992
+  },
+  "wikidata-entities": {
+    "changed_at": "2026-09-17",
+    "etag": "\"6aa9d17f-18037e355c\"",
+    "last_modified": "Tue, 15 Sep 2026 23:15:11 GMT",
+    "resolved_url": "https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.json.bz2",
+    "size": 103137817948
+  },
+  "wikipedia-common-misspellings": {
+    "changed_at": "2026-09-17",
+    "last_modified": "Sat, 27 Jan 2024 15:31:36 GMT",
+    "resolved_url": "https://en.wikipedia.org/w/index.php?title=Wikipedia:Lists_of_common_misspellings/For_machines&action=raw",
+    "sha256": "3b6a9290e5aaad968da7ec769a5174adb45247688ef7ae097fd2dd80237a3050",
+    "size": 99150
+  }
+}

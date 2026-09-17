@@ -1,0 +1,134 @@
+[
+  {
+    "id": "imdb-title-akas",
+    "name": "IMDb alternate titles (AKAs)",
+    "category": "titles",
+    "url": "https://datasets.imdbws.com/title.akas.tsv.gz",
+    "homepage": "https://developer.imdb.com/non-commercial-datasets",
+    "license": "IMDb non-commercial license (no redistribution)",
+    "mirror": false
+  },
+  {
+    "id": "imdb-title-basics",
+    "name": "IMDb base titles",
+    "category": "titles",
+    "url": "https://datasets.imdbws.com/title.basics.tsv.gz",
+    "homepage": "https://developer.imdb.com/non-commercial-datasets",
+    "license": "IMDb non-commercial license (no redistribution)",
+    "mirror": false
+  },
+  {
+    "id": "tmdb-movie-ids",
+    "name": "TMDB daily movie ID export",
+    "category": "titles",
+    "url": "https://files.tmdb.org/p/exports/movie_ids_{MM}_{DD}_{YYYY}.json.gz",
+    "homepage": "https://developer.themoviedb.org/docs/daily-id-exports",
+    "license": "TMDB terms of use",
+    "mirror": false
+  },
+  {
+    "id": "tmdb-tv-series-ids",
+    "name": "TMDB daily TV series ID export",
+    "category": "titles",
+    "url": "https://files.tmdb.org/p/exports/tv_series_ids_{MM}_{DD}_{YYYY}.json.gz",
+    "homepage": "https://developer.themoviedb.org/docs/daily-id-exports",
+    "license": "TMDB terms of use",
+    "mirror": false
+  },
+  {
+    "id": "enwiki-redirect",
+    "name": "English Wikipedia redirect table (includes R from misspelling)",
+    "category": "titles",
+    "url": "https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-redirect.sql.gz",
+    "homepage": "https://en.wikipedia.org/wiki/Category:Redirects_from_misspellings",
+    "license": "CC BY-SA 4.0",
+    "mirror": false
+  },
+  {
+    "id": "enwiki-page",
+    "name": "English Wikipedia page table",
+    "category": "titles",
+    "url": "https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-page.sql.gz",
+    "homepage": "https://dumps.wikimedia.org/enwiki/latest/",
+    "license": "CC BY-SA 4.0",
+    "mirror": false
+  },
+  {
+    "id": "enwiki-categorylinks",
+    "name": "English Wikipedia categorylinks table",
+    "category": "titles",
+    "url": "https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-categorylinks.sql.gz",
+    "homepage": "https://dumps.wikimedia.org/enwiki/latest/",
+    "license": "CC BY-SA 4.0",
+    "mirror": false
+  },
+  {
+    "id": "wikidata-entities",
+    "name": "Wikidata full entity dump (aliases / also known as)",
+    "category": "titles",
+    "url": "https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.json.bz2",
+    "homepage": "https://www.wikidata.org/wiki/Wikidata:Database_download",
+    "license": "CC0",
+    "mirror": false
+  },
+  {
+    "id": "mitton-birkbeck",
+    "name": "Birkbeck misspellings (Roger Mitton)",
+    "category": "misspellings",
+    "url": "https://titan.dcs.bbk.ac.uk/~roger/missp.dat",
+    "homepage": "https://www.dcs.bbk.ac.uk/~roger/corpora.html",
+    "license": "Free for research use, see homepage",
+    "mirror": true,
+    "filename": "birkbeck-missp.dat"
+  },
+  {
+    "id": "mitton-holbrook",
+    "name": "Holbrook misspellings (Roger Mitton)",
+    "category": "misspellings",
+    "url": "https://titan.dcs.bbk.ac.uk/~roger/holbrook-missp.dat",
+    "homepage": "https://www.dcs.bbk.ac.uk/~roger/corpora.html",
+    "license": "Free for research use, see homepage",
+    "mirror": true,
+    "filename": "holbrook-missp.dat"
+  },
+  {
+    "id": "mitton-aspell",
+    "name": "Aspell test misspellings (Roger Mitton)",
+    "category": "misspellings",
+    "url": "https://titan.dcs.bbk.ac.uk/~roger/aspell.dat",
+    "homepage": "https://www.dcs.bbk.ac.uk/~roger/corpora.html",
+    "license": "Free for research use, see homepage",
+    "mirror": true,
+    "filename": "aspell.dat"
+  },
+  {
+    "id": "mitton-wikipedia",
+    "name": "Wikipedia misspellings (Roger Mitton)",
+    "category": "misspellings",
+    "url": "https://titan.dcs.bbk.ac.uk/~roger/wikipedia.dat",
+    "homepage": "https://www.dcs.bbk.ac.uk/~roger/corpora.html",
+    "license": "Free for research use, see homepage",
+    "mirror": true,
+    "filename": "wikipedia.dat"
+  },
+  {
+    "id": "norvig-spell-errors",
+    "name": "Peter Norvig spell-errors.txt",
+    "category": "misspellings",
+    "url": "https://norvig.com/ngrams/spell-errors.txt",
+    "homepage": "https://norvig.com/ngrams/",
+    "license": "MIT (per norvig.com/ngrams)",
+    "mirror": true,
+    "filename": "norvig-spell-errors.txt"
+  },
+  {
+    "id": "wikipedia-common-misspellings",
+    "name": "Wikipedia lists of common misspellings (machine-readable)",
+    "category": "misspellings",
+    "url": "https://en.wikipedia.org/w/index.php?title=Wikipedia:Lists_of_common_misspellings/For_machines&action=raw",
+    "homepage": "https://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/For_machines",
+    "license": "CC BY-SA 4.0",
+    "mirror": true,
+    "filename": "wikipedia-common-misspellings.txt"
+  }
+]
