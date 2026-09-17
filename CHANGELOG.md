@@ -2,6 +2,11 @@
 
 ## 2026-09-17
 
+- **imdb-title-akas** updated: https://datasets.imdbws.com/title.akas.tsv.gz (490.1 MB)
+- **imdb-title-basics** updated: https://datasets.imdbws.com/title.basics.tsv.gz (216.6 MB)
+
+## 2026-09-17
+
 - **tmdb-tv-series-ids** updated: https://files.tmdb.org/p/exports/tv_series_ids_09_17_2026.json.gz (4.8 MB)
 
 ## 2026-09-17

@@ -22,17 +22,17 @@
   },
   "imdb-title-akas": {
     "changed_at": "2026-09-17",
-    "etag": "\"d37568140077a2a810b15b97ace03e46-62\"",
-    "last_modified": "Thu, 17 Sep 2026 00:40:26 GMT",
+    "etag": "\"886261653fa4db3407775bad1f84654f-62\"",
+    "last_modified": "Wed, 16 Sep 2026 12:37:34 GMT",
     "resolved_url": "https://datasets.imdbws.com/title.akas.tsv.gz",
-    "size": 513967311
+    "size": 513921320
   },
   "imdb-title-basics": {
     "changed_at": "2026-09-17",
-    "etag": "\"ad3d9bb733d2b0d7c97372bc7cb60fd6-28\"",
-    "last_modified": "Thu, 17 Sep 2026 00:39:35 GMT",
+    "etag": "\"decc38d14012dd0c88eb531f4dee90b7-28\"",
+    "last_modified": "Wed, 16 Sep 2026 12:36:41 GMT",
     "resolved_url": "https://datasets.imdbws.com/title.basics.tsv.gz",
-    "size": 227168719
+    "size": 227144340
   },
   "mitton-aspell": {
     "changed_at": "2026-09-17",
