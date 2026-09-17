@@ -78,10 +78,10 @@
   },
   "tmdb-tv-series-ids": {
     "changed_at": "2026-09-17",
-    "etag": "\"a523ea6290f13f6e56e2d76d7b863f3e\"",
-    "last_modified": "Wed, 16 Sep 2026 07:10:42 GMT",
-    "resolved_url": "https://files.tmdb.org/p/exports/tv_series_ids_09_16_2026.json.gz",
-    "size": 5063992
+    "etag": "\"a8467021ad1572c31550ac6a5f9ac46a\"",
+    "last_modified": "Thu, 17 Sep 2026 07:10:42 GMT",
+    "resolved_url": "https://files.tmdb.org/p/exports/tv_series_ids_09_17_2026.json.gz",
+    "size": 5052208
   },
   "wikidata-entities": {
     "changed_at": "2026-09-17",

@@ -2,7 +2,7 @@
 
 ## 2026-09-17
 
-- **tmdb-tv-series-ids** updated: https://files.tmdb.org/p/exports/tv_series_ids_09_16_2026.json.gz (4.8 MB)
+- **tmdb-tv-series-ids** updated: https://files.tmdb.org/p/exports/tv_series_ids_09_17_2026.json.gz (4.8 MB)
 
 ## 2026-09-17
 

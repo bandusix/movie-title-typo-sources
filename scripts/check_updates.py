@@ -54,9 +54,14 @@ def head(url):
         }
 
 
-def check(source, today):
+def check(source, today, known_url=None):
     last_error = None
-    for url in candidate_urls(source["url"], today):
+    urls = candidate_urls(source["url"], today)
+    # Never fall back past the dated file we already recorded, or a transient
+    # error on today's file would look like an "update" to yesterday's.
+    if known_url in urls:
+        urls = urls[: urls.index(known_url) + 1]
+    for url in urls:
         try:
             if source.get("mirror"):
                 with request(url, "GET") as resp:
@@ -118,7 +123,7 @@ def main():
     for s in sources:
         old = manifest.get(s["id"], {})
         try:
-            new = check(s, now.date())
+            new = check(s, now.date(), old.get("resolved_url"))
         except RuntimeError as exc:
             errors.append(f"{s['id']}: {exc}")
             print(f"ERROR   {s['id']}: {exc}", file=sys.stderr)
