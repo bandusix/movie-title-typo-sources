@@ -14,8 +14,8 @@ A GitHub Action runs **every day at 09:00 UTC**, checks each upstream download U
 <!-- STATUS:START -->
 | Source | Category | Size | Upstream last modified | Last change detected | Mirrored | Download |
 |---|---|---|---|---|---|---|
-| [IMDb alternate titles (AKAs)](https://developer.imdb.com/non-commercial-datasets) | titles | 490.1 MB | Wed, 16 Sep 2026 12:37:34 GMT | 2026-09-17 | no | [link](https://datasets.imdbws.com/title.akas.tsv.gz) |
-| [IMDb base titles](https://developer.imdb.com/non-commercial-datasets) | titles | 216.6 MB | Wed, 16 Sep 2026 12:36:41 GMT | 2026-09-17 | no | [link](https://datasets.imdbws.com/title.basics.tsv.gz) |
+| [IMDb alternate titles (AKAs)](https://developer.imdb.com/non-commercial-datasets) | titles | 490.2 MB | Thu, 17 Sep 2026 00:40:26 GMT | 2026-09-17 | no | [link](https://datasets.imdbws.com/title.akas.tsv.gz) |
+| [IMDb base titles](https://developer.imdb.com/non-commercial-datasets) | titles | 216.6 MB | Thu, 17 Sep 2026 00:39:35 GMT | 2026-09-17 | no | [link](https://datasets.imdbws.com/title.basics.tsv.gz) |
 | [TMDB daily movie ID export](https://developer.themoviedb.org/docs/daily-id-exports) | titles | 26.7 MB | Thu, 17 Sep 2026 07:19:17 GMT | 2026-09-17 | no | [link](https://files.tmdb.org/p/exports/movie_ids_09_17_2026.json.gz) |
 | [TMDB daily TV series ID export](https://developer.themoviedb.org/docs/daily-id-exports) | titles | 4.8 MB | Thu, 17 Sep 2026 07:10:42 GMT | 2026-09-17 | no | [link](https://files.tmdb.org/p/exports/tv_series_ids_09_17_2026.json.gz) |
 | [English Wikipedia redirect table (includes R from misspelling)](https://en.wikipedia.org/wiki/Category:Redirects_from_misspellings) | titles | 178.3 MB | Thu, 03 Sep 2026 17:59:27 GMT | 2026-09-17 | no | [link](https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-redirect.sql.gz) |

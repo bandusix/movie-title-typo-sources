@@ -2,6 +2,14 @@
 
 ## 2026-09-17
 
+- **imdb-title-akas** updated: https://datasets.imdbws.com/title.akas.tsv.gz (490.2 MB)
+
+## 2026-09-17
+
+- **imdb-title-basics** updated: https://datasets.imdbws.com/title.basics.tsv.gz (216.6 MB)
+
+## 2026-09-17
+
 - **imdb-title-akas** updated: https://datasets.imdbws.com/title.akas.tsv.gz (490.1 MB)
 - **imdb-title-basics** updated: https://datasets.imdbws.com/title.basics.tsv.gz (216.6 MB)
 

@@ -9,6 +9,7 @@ Writes manifest.json, prepends to CHANGELOG.md and regenerates the status
 table in README.md. Standard library only.
 """
 import datetime as dt
+import email.utils
 import hashlib
 import json
 import pathlib
@@ -87,6 +88,14 @@ def fingerprint(entry, mirror):
     return (entry.get("resolved_url"), entry.get("etag"), entry.get("last_modified"), entry.get("size"))
 
 
+def is_older(new, old):
+    """True when a stale CDN edge serves a copy older than the one already recorded."""
+    try:
+        return email.utils.parsedate_to_datetime(new["last_modified"]) < email.utils.parsedate_to_datetime(old["last_modified"])
+    except (KeyError, TypeError, ValueError):
+        return False
+
+
 def human_size(n):
     if n is None:
         return "?"
@@ -129,6 +138,9 @@ def main():
             print(f"ERROR   {s['id']}: {exc}", file=sys.stderr)
             continue
         mirror = bool(s.get("mirror"))
+        if is_older(new, old):
+            print(f"stale   {s['id']} (edge served an older copy, keeping recorded version)")
+            continue
         if fingerprint(old, mirror) != fingerprint(new, mirror):
             new["changed_at"] = stamp
             verb = "added" if not old else "updated"
