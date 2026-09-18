@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-18
+
+- **imdb-title-akas** updated: https://datasets.imdbws.com/title.akas.tsv.gz (490.4 MB)
+- **imdb-title-basics** updated: https://datasets.imdbws.com/title.basics.tsv.gz (216.7 MB)
+- **tmdb-movie-ids** updated: https://files.tmdb.org/p/exports/movie_ids_09_18_2026.json.gz (26.7 MB)
+- **tmdb-tv-series-ids** updated: https://files.tmdb.org/p/exports/tv_series_ids_09_18_2026.json.gz (4.8 MB)
+- **norvig-spell-errors** updated: https://norvig.com/ngrams/spell-errors.txt (440.9 KB)
+
 ## 2026-09-17
 
 - **norvig-spell-errors** updated: https://norvig.com/ngrams/spell-errors.txt (11.8 KB)
