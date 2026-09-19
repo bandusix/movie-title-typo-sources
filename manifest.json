@@ -28,11 +28,11 @@
     "size": 514170310
   },
   "imdb-title-basics": {
-    "changed_at": "2026-09-18",
-    "etag": "\"2c0b7ad4148685c1071d9e01cae0466e-28\"",
-    "last_modified": "Thu, 17 Sep 2026 12:47:13 GMT",
+    "changed_at": "2026-09-19",
+    "etag": "\"3eba722782d7b9422ea6a285a29f46d9-28\"",
+    "last_modified": "Fri, 18 Sep 2026 12:43:39 GMT",
     "resolved_url": "https://datasets.imdbws.com/title.basics.tsv.gz",
-    "size": 227187832
+    "size": 227249985
   },
   "mitton-aspell": {
     "changed_at": "2026-09-17",
@@ -70,18 +70,18 @@
     "size": 451530
   },
   "tmdb-movie-ids": {
-    "changed_at": "2026-09-18",
-    "etag": "\"d9de226a183b0a8edbde73f366851733\"",
-    "last_modified": "Fri, 18 Sep 2026 07:19:28 GMT",
-    "resolved_url": "https://files.tmdb.org/p/exports/movie_ids_09_18_2026.json.gz",
-    "size": 27975426
+    "changed_at": "2026-09-19",
+    "etag": "\"9d653f8590ca08e46e13f2f3f95acbc1\"",
+    "last_modified": "Sat, 19 Sep 2026 07:19:49 GMT",
+    "resolved_url": "https://files.tmdb.org/p/exports/movie_ids_09_19_2026.json.gz",
+    "size": 28020241
   },
   "tmdb-tv-series-ids": {
-    "changed_at": "2026-09-18",
-    "etag": "\"f73a03bbed4ca6a70a2189e87d33467f\"",
-    "last_modified": "Fri, 18 Sep 2026 07:10:40 GMT",
-    "resolved_url": "https://files.tmdb.org/p/exports/tv_series_ids_09_18_2026.json.gz",
-    "size": 5055264
+    "changed_at": "2026-09-19",
+    "etag": "\"526cda2dab5dba7048e3ec858b374450\"",
+    "last_modified": "Sat, 19 Sep 2026 07:10:41 GMT",
+    "resolved_url": "https://files.tmdb.org/p/exports/tv_series_ids_09_19_2026.json.gz",
+    "size": 5066688
   },
   "wikidata-entities": {
     "changed_at": "2026-09-17",
