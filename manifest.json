@@ -21,18 +21,18 @@
     "size": 187638901
   },
   "imdb-title-akas": {
-    "changed_at": "2026-10-26",
-    "etag": "\"c796959f96710316a1eff247c1dea806-62\"",
-    "last_modified": "Sun, 25 Oct 2026 12:38:36 GMT",
+    "changed_at": "2026-10-27",
+    "etag": "\"7e69c072d2d2c548c38328386a20ba17-62\"",
+    "last_modified": "Mon, 26 Oct 2026 12:40:44 GMT",
     "resolved_url": "https://datasets.imdbws.com/title.akas.tsv.gz",
-    "size": 519233987
+    "size": 519353579
   },
   "imdb-title-basics": {
-    "changed_at": "2026-10-26",
-    "etag": "\"b3f3be59bdcf424d126fd4f51e33ec37-28\"",
-    "last_modified": "Sun, 25 Oct 2026 12:37:42 GMT",
+    "changed_at": "2026-10-27",
+    "etag": "\"933b95df7dfdbd2efd67fc932e8299da-28\"",
+    "last_modified": "Mon, 26 Oct 2026 12:39:59 GMT",
     "resolved_url": "https://datasets.imdbws.com/title.basics.tsv.gz",
-    "size": 229217336
+    "size": 229270732
   },
   "mitton-aspell": {
     "changed_at": "2026-09-17",
@@ -70,18 +70,18 @@
     "size": 451530
   },
   "tmdb-movie-ids": {
-    "changed_at": "2026-10-26",
-    "etag": "\"b5fd6010a542a319da09713171e1a541\"",
-    "last_modified": "Mon, 26 Oct 2026 07:17:15 GMT",
-    "resolved_url": "https://files.tmdb.org/p/exports/movie_ids_10_26_2026.json.gz",
-    "size": 28380440
+    "changed_at": "2026-10-27",
+    "etag": "\"897bb5f5fdb211b877d256a2d062c0c3\"",
+    "last_modified": "Tue, 27 Oct 2026 07:17:14 GMT",
+    "resolved_url": "https://files.tmdb.org/p/exports/movie_ids_10_27_2026.json.gz",
+    "size": 28390800
   },
   "tmdb-tv-series-ids": {
-    "changed_at": "2026-10-26",
-    "etag": "\"cee2d07ca703c8f92373fedbfe7e05a4\"",
-    "last_modified": "Mon, 26 Oct 2026 07:10:07 GMT",
-    "resolved_url": "https://files.tmdb.org/p/exports/tv_series_ids_10_26_2026.json.gz",
-    "size": 5141378
+    "changed_at": "2026-10-27",
+    "etag": "\"03e4d3e4e5ccd580f55bb0fb8984d3eb\"",
+    "last_modified": "Tue, 27 Oct 2026 07:10:07 GMT",
+    "resolved_url": "https://files.tmdb.org/p/exports/tv_series_ids_10_27_2026.json.gz",
+    "size": 5142281
   },
   "wikidata-entities": {
     "changed_at": "2026-10-21",
