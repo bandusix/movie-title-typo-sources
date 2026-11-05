@@ -1,38 +1,38 @@
 {
   "enwiki-categorylinks": {
-    "changed_at": "2026-10-08",
-    "etag": "\"6ac7037d-97fc6886\"",
-    "last_modified": "Thu, 08 Oct 2026 02:44:13 GMT",
+    "changed_at": "2026-11-05",
+    "etag": "\"6aea39eb-98b59898\"",
+    "last_modified": "Tue, 03 Nov 2026 19:45:47 GMT",
     "resolved_url": "https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-categorylinks.sql.gz",
-    "size": 2549901446
+    "size": 2562037912
   },
   "enwiki-page": {
-    "changed_at": "2026-10-08",
-    "etag": "\"6ac70d9a-90ffc009\"",
-    "last_modified": "Thu, 08 Oct 2026 03:27:22 GMT",
+    "changed_at": "2026-11-05",
+    "etag": "\"6aea434d-9066af61\"",
+    "last_modified": "Tue, 03 Nov 2026 20:25:49 GMT",
     "resolved_url": "https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-page.sql.gz",
-    "size": 2432679945
+    "size": 2422648673
   },
   "enwiki-redirect": {
-    "changed_at": "2026-10-08",
-    "etag": "\"6ac70e12-b2f2475\"",
-    "last_modified": "Thu, 08 Oct 2026 03:29:22 GMT",
+    "changed_at": "2026-11-05",
+    "etag": "\"6aea43bd-b36c75d\"",
+    "last_modified": "Tue, 03 Nov 2026 20:27:41 GMT",
     "resolved_url": "https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-redirect.sql.gz",
-    "size": 187638901
+    "size": 188139357
   },
   "imdb-title-akas": {
-    "changed_at": "2026-11-04",
-    "etag": "\"9b5a86010b32aae5f7d15b58df2a8fde-63\"",
-    "last_modified": "Wed, 04 Nov 2026 00:32:46 GMT",
+    "changed_at": "2026-11-05",
+    "etag": "\"659a34224bccf4618d3e8390475cde6e-63\"",
+    "last_modified": "Thu, 05 Nov 2026 00:48:39 GMT",
     "resolved_url": "https://datasets.imdbws.com/title.akas.tsv.gz",
-    "size": 520949382
+    "size": 521165937
   },
   "imdb-title-basics": {
-    "changed_at": "2026-11-04",
-    "etag": "\"3c80bc8c3a0d834e8a1b6a98b9f1f820-28\"",
-    "last_modified": "Wed, 04 Nov 2026 00:31:47 GMT",
+    "changed_at": "2026-11-05",
+    "etag": "\"6c0031bee13667461b24f0edbe5ef669-28\"",
+    "last_modified": "Thu, 05 Nov 2026 00:47:45 GMT",
     "resolved_url": "https://datasets.imdbws.com/title.basics.tsv.gz",
-    "size": 229740736
+    "size": 229819845
   },
   "mitton-aspell": {
     "changed_at": "2026-09-17",
@@ -70,18 +70,18 @@
     "size": 451530
   },
   "tmdb-movie-ids": {
-    "changed_at": "2026-11-04",
-    "etag": "\"e80b01d2e9e92bb08af979e41f23d612\"",
-    "last_modified": "Wed, 04 Nov 2026 07:17:15 GMT",
-    "resolved_url": "https://files.tmdb.org/p/exports/movie_ids_11_04_2026.json.gz",
-    "size": 28405667
+    "changed_at": "2026-11-05",
+    "etag": "\"3a6dfc009ce1b7545c18f633ef0bebbe\"",
+    "last_modified": "Thu, 05 Nov 2026 07:17:15 GMT",
+    "resolved_url": "https://files.tmdb.org/p/exports/movie_ids_11_05_2026.json.gz",
+    "size": 28445068
   },
   "tmdb-tv-series-ids": {
-    "changed_at": "2026-11-04",
-    "etag": "\"9eb25bbc0833f4c0b967c441b218f064\"",
-    "last_modified": "Wed, 04 Nov 2026 07:10:07 GMT",
-    "resolved_url": "https://files.tmdb.org/p/exports/tv_series_ids_11_04_2026.json.gz",
-    "size": 5150671
+    "changed_at": "2026-11-05",
+    "etag": "\"5974819c1d463bfe9a54b8adaca7fbd2\"",
+    "last_modified": "Thu, 05 Nov 2026 07:10:07 GMT",
+    "resolved_url": "https://files.tmdb.org/p/exports/tv_series_ids_11_05_2026.json.gz",
+    "size": 5155627
   },
   "wikidata-entities": {
     "changed_at": "2026-10-28",
