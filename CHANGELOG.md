@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-25
+
+- **imdb-title-akas** updated: https://datasets.imdbws.com/title.akas.tsv.gz (500.7 MB)
+- **imdb-title-basics** updated: https://datasets.imdbws.com/title.basics.tsv.gz (220.3 MB)
+- **tmdb-movie-ids** updated: https://files.tmdb.org/p/exports/movie_ids_11_25_2026.json.gz (26.9 MB)
+- **tmdb-tv-series-ids** updated: https://files.tmdb.org/p/exports/tv_series_ids_11_25_2026.json.gz (4.9 MB)
+- **wikidata-entities** updated: https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.json.bz2 (96.9 GB)
+
 ## 2026-11-24
 
 - **imdb-title-akas** updated: https://datasets.imdbws.com/title.akas.tsv.gz (500.6 MB)
